@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: #F0F2F5;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-cards {
+  display: flex;
+  justify-content: space-between;
+  background: #152E3D;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.card-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card.content {
+  flex: 1;
+}
+
+.card.image-container {
+  margin-left: 10px;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chart-card-1,
+.chart-card-2,
+.progress-card,
+.job-card,
+.total-card,
+.alert-card 
+{
+  flex: 1;
+  margin: 10px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.chart-card-1,
+.chart-card-2 {
+  width: 200px;
+  height: 400px;
+}
+
+.progress-card {
+  width: 250px;
+  height: 250px;
+}
+
+.job-card {
+  width: 250px;
+  height: 200px;
+}
+
+.total-card {
+  width: 200px;
+  height: 150px;
+}
+
+.alert-card {
+  width: 200px;
+  height: 150px;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-header,
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chart-title,
+.progress-title,
+.progress-text,
+.job-title,
+.alert-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #3358FF;
+}
+
+.chart-dropdown,
+.progress-dropdown {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-line {
+  width: 300px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-line-1 span {
+  display: block;
+  height: 100%;
+  background-color: #3358FF;
+}
+
+.progress-line-2 span {
+  display: block;
+  height: 100%;
+  background-color: #43c7aa;
+}
+
+.progress-line-3 span {
+  display: block;
+  height: 100%;
+  background-color: orangered;
+}
+
+.total-projects,
+.total-clients {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 90px;
+  background-color: #E2F1FF;
+}
+
+.alert-lists {
+  padding: 5px;
+  border-radius: 5px;
+  width: 250px;
+  height: 90px;
+  background-color: #E2F1FF;
+}
+
+
+
+@media (min-width: 1200px) {
+  .chart-card-1,
+  .chart-card-2,
+  .progress-card,
+  .job-card {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .chart-card-1,
+  .chart-card-2,
+  .progress-card,
+  .job-card {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .chart-card-1,
+  .chart-card-2,
+  .progress-card,
+  .job-card {
+    flex-basis: 100%;
+  }
+}
+
